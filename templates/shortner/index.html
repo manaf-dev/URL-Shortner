@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1 class="text-center my-4">Shorten Your URLs Here.</h1>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+        <!-- <label for="userUrl">Enter URL:</label> -->
+        <input type="url" id="userUrl" class="form-control" name="userUrl" placeholder="Enter your url here.... " required>
+    </div>
+    <div class="text-center mt-3">
+        <input type="submit" value="Submit" class="btn btn-success">
+    </div>
+</form>
+{% endblock %}

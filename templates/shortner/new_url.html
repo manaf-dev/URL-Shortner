@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+<h2 class="text-center">Your URL</h2>
+<p id="copyText">{{  new_url }}</p>
+<button id='copybtn' class="btn btn-info">Copy</button>
+
+<a href="{% url 'home' %}" class="btn-link">Go back</a>
+{% endblock %}
